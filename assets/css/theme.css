@@ -1,6 +1,18 @@
 /*****
  ***
- ***   Theme
+ ***   Theme: Layout
+ ***
+*****/
+
+.header__rows .row.flex,
+.footer__rows .row.flex {
+    flex-direction: row;
+    justify-content: space-between;
+} 
+
+/*****
+ ***
+ ***   Theme: Color
  ***
 *****/
 
