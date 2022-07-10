@@ -53,21 +53,21 @@ p, li {
 *****/
 
 .col > * + * {
-	margin-top: var(--content-space-xl);
+	margin-top: var(--content-space-lg);
 }
 
 .col > p + p {
-	margin-top: var(--content-space-lg);
-}
-
-.col > :is(h1, h2) + * {
-	margin-top: var(--content-space-lg);
-}
-
-.col > :is(h3, h4) + * {
 	margin-top: var(--content-space-md);
 }
 
-.col > :is(h5, h6) + * {
+.col > :is(h1, h2) + * {
+	margin-top: var(--content-space-md);
+}
+
+.col > :is(h3, h4) + * {
 	margin-top: var(--content-space-sm);
+}
+
+.col > :is(h5, h6) + * {
+	margin-top: var(--content-space-xs);
 }

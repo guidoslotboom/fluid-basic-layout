@@ -18,12 +18,12 @@
     --layout-space-xs: calc(var(--layout-space) / 4);
 
     /*** Fluid spaces for the content ***/
-    --content-space: clamp(1.2rem, 2.5vw, 1.6rem);
-    --content-space-xl: calc(var(--content-space) * 2);
-    --content-space-lg: calc(var(--content-space) * 1.5);
+    --content-space: clamp(2rem, 2vw, 2.8rem);
+    --content-space-xl: calc(var(--content-space) + 0.8rem);
+    --content-space-lg: calc(var(--content-space) + 0.4rem);
     --content-space-md: var(--content-space);
-    --content-space-sm: calc(var(--content-space) * 0.75);
-    --content-space-xs: calc(var(--content-space) * 0.25);
+    --content-space-sm: calc(var(--content-space) - 0.8rem);
+    --content-space-xs: calc(var(--content-space) - 1.2rem);
 }
 
 @media only screen and (min-width: 1281px) {
