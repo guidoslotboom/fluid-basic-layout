@@ -25,6 +25,7 @@
 .row {
     width: 100%;
     max-width: var(--row-width);
-    padding: 32px;
+    padding: var(--layout-space-md);
     margin: 0 auto;
+    gap: var(--layout-space-md);
 }
