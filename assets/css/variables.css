@@ -7,7 +7,7 @@
 :root {
     font-size: 62.5%; /* Because 62.5% of 16px is 10px. Which makes 1rem = 10px. */
     --font-size-body: 1.6rem;
-
+    --relative-size: 1rem;
 
     /*** Fluid spaces for the layout Padding and Gap ***/
     --layout-space: clamp(2rem, 2.5vw, 4.8rem);
@@ -16,6 +16,14 @@
     --layout-space-md: var(--layout-space);
     --layout-space-sm: calc(var(--layout-space) / 2);
     --layout-space-xs: calc(var(--layout-space) / 4);
+
+    /*** Fluid spaces for the content ***/
+    --content-space: clamp(1.2rem, 2.5vw, 1.6rem);
+    --content-space-xl: calc(var(--content-space) * 2);
+    --content-space-lg: calc(var(--content-space) * 1.5);
+    --content-space-md: var(--content-space);
+    --content-space-sm: calc(var(--content-space) * 0.75);
+    --content-space-xs: calc(var(--content-space) * 0.25);
 }
 
 @media only screen and (min-width: 1281px) {

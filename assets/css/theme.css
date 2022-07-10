@@ -8,7 +8,7 @@
 .footer__rows .row.flex {
     flex-direction: row;
     justify-content: space-between;
-} 
+}
 
 /*****
  ***
@@ -17,9 +17,17 @@
 *****/
 
 .page {
-    background-color:lightcyan;
+    background-color: white;
 }
 
 .page > *:nth-child(odd) {
-    background-color:darkcyan;
+    background-color: darkcyan;
+}
+
+.col:nth-child(even) {
+    background-color: lightsteelblue;
+}
+
+.col:nth-child(odd) {
+    background-color: lightblue;
 }
