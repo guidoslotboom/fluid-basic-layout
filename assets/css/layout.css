@@ -1,0 +1,30 @@
+/*****
+ ***
+ ***   Layout: Frame
+ ***
+*****/
+
+.page__header,
+.page__content,
+.page__footer {
+    width: 100%;
+}
+
+/*****
+ ***
+ ***   Layout: Row
+ ***
+*****/
+
+.header__rows,
+.content__rows,
+.footer__rows {
+    width: 100%;
+}
+
+.row {
+    width: 100%;
+    max-width: var(--row-width);
+    padding: 32px;
+    margin: 0 auto;
+}

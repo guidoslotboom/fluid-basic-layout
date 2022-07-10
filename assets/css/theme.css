@@ -4,6 +4,10 @@
  ***
 *****/
 
-body {
-    background-color: darkturquoise;
+.page {
+    background-color:lightcyan;
+}
+
+.page > *:nth-child(odd) {
+    background-color:darkcyan;
 }
