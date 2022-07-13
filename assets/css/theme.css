@@ -24,10 +24,10 @@
     background-color: darkcyan;
 }
 
-.col:nth-child(even) {
+[class|="col"]:nth-child(even) {
     background-color: lightsteelblue;
 }
 
-.col:nth-child(odd) {
+[class|="col"]:nth-child(odd) {
     background-color: lightblue;
 }
