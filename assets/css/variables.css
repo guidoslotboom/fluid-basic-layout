@@ -1,6 +1,6 @@
 /*****
  ***
- ***   Variables
+ ***   Variables: Root
  ***
 *****/
 
@@ -26,14 +26,50 @@
     --content-space-xs: calc(var(--content-space) - 1.2rem);
 }
 
-@media only screen and (min-width: 1281px) {
+/*****
+ ***
+ ***    Variables: Media Queries, 2 steps
+ ***
+*****/
+
+@media only screen and (min-width: 1120px) {
     :root {
-        --row-width: 128rem;
+        /*** ***/
+        --row-width: 139.2rem;
+
+        /*** ***/
+        --auto-fit-lg: 512px;
+        --auto-fit-md: 320px;
+        --auto-fit-sm: 240px;
     }
 }
 
-@media only screen and (max-width: 1280px) {
+@media screen and (max-width: 1119px) {
     :root {
+        /*** ***/
         --row-width: 100%;
+
+        /*** ***/
+        --auto-fit-lg: 400px;
+        --auto-fit-md: 280px;
+        --auto-fit-sm: 224px;
+    }
+}
+
+/*****
+ ***
+ ***    Variables: Layout
+ ***
+*****/
+
+@media only screen and (min-width: 640px) {
+    :root {
+        --grid-cols-number: 12;
+    }
+}
+
+@media only screen and (max-width: 639px) {
+    :root {
+        --grid-cols-number: 6;
     }
 }
