@@ -4,8 +4,8 @@
  ***
 *****/
 
-.header__rows .row.flex,
-.footer__rows .row.flex {
+.header__row .flex,
+.footer__row .flex {
     flex-direction: row;
     justify-content: space-between;
 }
@@ -24,11 +24,11 @@
     background-color: darkcyan;
 }
 
-.row [class*="col"]:nth-child(even) {
+.grid [class*="col"]:nth-child(even) {
     background-color: lightsteelblue;
 }
 
-.row [class*="col"]:nth-child(odd) {
+.grid [class*="col"]:nth-child(odd) {
     background-color: lightblue;
 }
 
@@ -41,4 +41,18 @@
 nav {
     display: flex;
     gap: var(--layout-space-md);
+}
+
+/*****
+ ***
+ ***   Theme: Footer
+ ***
+*****/
+
+.page__footer > div:nth-child(even) {
+    background-color: lightcyan;
+}
+
+.page__footer > div:nth-child(even) .flex {
+    padding-block: var(--layout-space-sm);
 }
