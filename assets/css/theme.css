@@ -24,10 +24,21 @@
     background-color: darkcyan;
 }
 
-[class|="col"]:nth-child(even) {
+.row [class*="col"]:nth-child(even) {
     background-color: lightsteelblue;
 }
 
-[class|="col"]:nth-child(odd) {
+.row [class*="col"]:nth-child(odd) {
     background-color: lightblue;
+}
+
+/*****
+ ***
+ ***   Theme: Nav
+ ***
+*****/
+
+nav {
+    display: flex;
+    gap: var(--layout-space-md);
 }
