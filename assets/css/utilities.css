@@ -29,3 +29,15 @@
 .text-sm {
     font-size: clamp(1.4rem, 0.4vw + var(--relative-size), 1.6rem);
 }
+
+.text-left {
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
