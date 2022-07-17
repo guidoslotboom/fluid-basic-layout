@@ -56,3 +56,23 @@ nav {
 .page__footer > div:nth-child(even) .flex {
     padding-block: var(--layout-space-sm);
 }
+
+/*****
+ ***
+ ***   Work In Progress
+ ***
+*****/
+
+ul {
+    margin-left: 1.6rem;
+    list-style: disc;
+}
+
+ul li {
+    margin-bottom: var(--content-space-xs);
+}
+
+blockquote span {
+    display: block;
+    margin-bottom: var(--content-space-xs);
+}

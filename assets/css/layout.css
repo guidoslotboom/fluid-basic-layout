@@ -32,7 +32,7 @@
 
 /*****
  ***
- ***   Layout: Grid Columns
+ ***   Layout: Grid Fit Columns
  ***
 *****/
 
@@ -57,6 +57,8 @@
 .grid-cols {
     grid-template-columns: repeat(var(--grid-cols-number), 1fr);
 }
+
+/*** ***/
 
 .col-span-12 {
     grid-column: span 12;
