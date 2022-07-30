@@ -1,0 +1,50 @@
+/*****
+ ***
+ ***   Blockquote
+ ***
+*****/
+
+blockquote span {
+    display: block;
+    margin-bottom: var(--layout-space-xs);
+}
+
+blockquote span::before {
+    content: "\"";
+}
+
+blockquote span::after {
+    content: "\"";
+}
+
+blockquote cite::before {
+    margin-right: var(--layout-space-xs);
+    content: "-";
+}
+
+/*****
+ ***
+ ***   List
+ ***
+*****/
+
+.content__row ul {
+    margin-left: 2rem;
+    list-style: disc;
+}
+
+.content__row ol {
+    margin-left: 2rem;
+    list-style: decimal;
+}
+
+:where(.header__row, .footer__row) ul,
+:where(.header__row, .footer__row) ol {
+    list-style: none;
+}
+
+/*****
+ ***
+ ***   Work In Progress
+ ***
+*****/
