@@ -16,6 +16,10 @@
  ***
 *****/
 
+body {
+    color: black;
+}
+
 .page {
     background-color: white;
 }

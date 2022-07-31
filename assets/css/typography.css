@@ -5,45 +5,68 @@
 *****/
 
 body {
-    font-family: sans-serif;
+    font-family: var(--font-family-body);
     font-size: var(--font-size-body);
-    font-weight: 400;
-    line-height: 1.25;
-    color: black;
+    font-weight: var(--font-weight-body);
+    line-height: var(--line-height-md);
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-weight: 700;
-    line-height: 1.2;
+    font-family: var(--font-family-heading);
+    font-weight: var(--font-weight-heading);
+    line-height: var(--line-height-sm);
 }
 
 h1 {
-    font-size: clamp(3.2rem, 3vw + var(--relative-size), 5.6rem); 
+    font-size: var(--font-size-h1);
 }
 
 h2 {
-    font-size: clamp(2.6rem, 2vw + var(--relative-size), 4rem);
+    font-size: var(--font-size-h2);
 }
 
 h3 {
-    font-size: clamp(2.2rem, 1.5vw + var(--relative-size), 2.8rem);
+    font-size: var(--font-size-h3);
 }
 
 h4 {
-    font-size: clamp(1.8rem, 1.25vw + var(--relative-size), 2.4rem);
+    font-size: var(--font-size-h4);
 }
 
 h5 {
-    font-size: clamp(1.6rem, 1.125vw + var(--relative-size), 2.2rem);
+    font-size: var(--font-size-h5);
 }
 
 h6 {
-    font-size: clamp(1.4rem, 1vw + var(--relative-size), 1.8rem);
+    font-size: var(--font-size-h6);
 }
 
 p, li {
-    font-size: clamp(1.6rem, 0.5vw + var(--relative-size), 1.8rem);
-    line-height: 1.5;
+    font-size: var(--font-size-md);
+}
+
+strong {
+    font-weight: var(--font-weight-strong);
+}
+
+a:link {
+    font-weight: var(--font-weight-link);
+}
+
+i, q {
+    font-style: italic;
+}
+
+u {
+    text-decoration: underline;
+}
+
+s {
+    text-decoration: line-through;
+}
+
+small {
+    font-size: var(--font-size-sm);
 }
 
 /*****
@@ -53,12 +76,15 @@ p, li {
 *****/
 
 blockquote span {
-    font-size: clamp(1.8rem, 1.25vw + var(--relative-size), 2.4rem);
     font-style: italic;
 }
 
+blockquote span {
+    font-size: clamp(2.2rem, 1.5vw + var(--relative-size), 2.8rem);
+}
+
 blockquote cite {
-    font-size: clamp(1.4rem, 0.4vw + var(--relative-size), 1.6rem);
+    font-size: var(--font-size-lg);
 }
 
 /*****

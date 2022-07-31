@@ -19,15 +19,15 @@
 *****/
 
 .text-lg {
-    font-size: clamp(1.7rem, 0.75vw + var(--relative-size), 2.0rem);
+    font-size: var(--font-size-lg);
 }
 
 .text-md {
-    font-size: clamp(1.6rem, 0.5vw + var(--relative-size), 1.8rem);
+    font-size: var(--font-size-md);
 }
 
 .text-sm {
-    font-size: clamp(1.4rem, 0.4vw + var(--relative-size), 1.6rem);
+    font-size: var(--font-size-sm);
 }
 
 .text-left {

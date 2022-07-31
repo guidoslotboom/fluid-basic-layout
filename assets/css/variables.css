@@ -24,6 +24,30 @@
     --content-space-md: var(--content-space);
     --content-space-sm: calc(var(--content-space) - 0.8rem);
     --content-space-xs: calc(var(--content-space) - 1.2rem);
+
+    /*** Values of Typography variables ***/
+    --font-size-h1: clamp(3.2rem, 3vw + var(--relative-size), 5.6rem);
+    --font-size-h2: clamp(2.6rem, 2vw + var(--relative-size), 4rem);
+    --font-size-h3: clamp(2.2rem, 1.5vw + var(--relative-size), 2.8rem);
+    --font-size-h4: clamp(1.8rem, 1.25vw + var(--relative-size), 2.4rem);
+    --font-size-h5: clamp(1.6rem, 1.125vw + var(--relative-size), 2.2rem);
+    --font-size-h6: clamp(1.4rem, 1vw + var(--relative-size), 1.8rem);
+
+    --font-size-lg: clamp(1.7rem, 0.75vw + var(--relative-size), 2.0rem);
+    --font-size-md: clamp(1.6rem, 0.6vw + var(--relative-size), 1.8rem);
+    --font-size-sm: clamp(1.4rem, 0.45vw + var(--relative-size), 1.6rem);
+
+    --line-height-lg: 1.8;
+    --line-height-md: 1.5;
+    --line-height-sm: 1.2;
+
+    --font-weight-body: 400;
+    --font-weight-heading: 700;
+    --font-weight-strong: 700;
+    --font-weight-link: 400;
+
+    --font-family-body: sans-serif;
+    --font-family-heading: sans-serif;
 }
 
 /*****
