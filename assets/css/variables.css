@@ -33,9 +33,11 @@
     --font-size-h5: clamp(1.6rem, 1.125vw + var(--relative-size), 2.2rem);
     --font-size-h6: clamp(1.4rem, 1vw + var(--relative-size), 1.8rem);
 
+    --font-size-xl: clamp(1.8rem, 1vw + var(--relative-size), 2.2rem);
     --font-size-lg: clamp(1.7rem, 0.75vw + var(--relative-size), 2.0rem);
     --font-size-md: clamp(1.6rem, 0.6vw + var(--relative-size), 1.8rem);
     --font-size-sm: clamp(1.4rem, 0.45vw + var(--relative-size), 1.6rem);
+    --font-size-xs: clamp(1.3rem, 0.375vw + var(--relative-size), 1.5rem);
 
     /*** Values for Typography ***/
     --line-height-lg: 1.75;

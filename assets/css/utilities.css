@@ -18,6 +18,10 @@
  ***
 *****/
 
+.text-xl {
+    font-size: var(--font-size-xl, 1.8rem);
+}
+
 .text-lg {
     font-size: var(--font-size-lg, 1.7rem);
 }
@@ -28,6 +32,10 @@
 
 .text-sm {
     font-size: var(--font-size-sm, 1.4rem);
+}
+
+.text-xs {
+    font-size: var(--font-size-xs, 1.3rem);
 }
 
 .text-left {
