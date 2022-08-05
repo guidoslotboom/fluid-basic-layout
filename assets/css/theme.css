@@ -25,16 +25,16 @@ body {
 }
 
 .page > *:nth-child(odd) {
-    background-color: darkcyan;
+    background-color: var(--color-neutral-30);
 }
 
-.grid [class*="col"]:nth-child(even) {
+/* .grid [class*="col"]:nth-child(even) {
     background-color: lightsteelblue;
 }
 
 .grid [class*="col"]:nth-child(odd) {
     background-color: lightblue;
-}
+} */
 
 /*****
  ***
@@ -54,7 +54,7 @@ nav {
 *****/
 
 .page__footer > div:nth-child(even) {
-    background-color: lightcyan;
+    background-color: var(--color-neutral-40);
 }
 
 .page__footer > div:nth-child(even) .flex {
@@ -66,3 +66,157 @@ nav {
  ***   Work In Progress
  ***
 *****/
+
+.colors {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.colors > * {
+    height: 8rem;
+    width: 14.285%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* color: white; */
+}
+
+/*** Color: Primary ***/
+
+.primary-10 {
+    background-color: var(--color-primary-10);
+    color: var(--color-primary-70);
+}
+
+.primary-20 {
+    background-color: var(--color-primary-20);
+    color: var(--color-primary-70);
+}
+
+.primary-30 {
+    background-color: var(--color-primary-30);
+}
+
+.primary-40 {
+    background-color: var(--color-primary-40);
+}
+
+.primary-50 {
+    background-color: var(--color-primary-50);
+}
+
+.primary-60 {
+    background-color: var(--color-primary-60);
+    color: white;
+}
+
+.primary-70 {
+    background-color: var(--color-primary-70);
+    color: white;
+}
+
+/*** Color: Secondary ***/
+
+.secondary-10 {
+    background-color: var(--color-secondary-10);
+    color: var(--color-secondary-70);
+}
+
+.secondary-20 {
+    background-color: var(--color-secondary-20);
+    color: var(--color-secondary-70);
+}
+
+.secondary-30 {
+    background-color: var(--color-secondary-30);
+    color: white;
+}
+
+.secondary-40 {
+    background-color: var(--color-secondary-40);
+    color: white;
+}
+
+.secondary-50 {
+    background-color: var(--color-secondary-50);
+    color: white;
+}
+
+.secondary-60 {
+    background-color: var(--color-secondary-60);
+    color: white;
+}
+
+.secondary-70 {
+    background-color: var(--color-secondary-70);
+    color: white;
+}
+
+/*** Color: Accent ***/
+
+.accent-10 {
+    background-color: var(--color-accent-10);
+    color: var(--color-accent-70);
+}
+
+.accent-20 {
+    background-color: var(--color-accent-20);
+    color: var(--color-accent-70);
+}
+
+.accent-30 {
+    background-color: var(--color-accent-30);
+}
+
+.accent-40 {
+    background-color: var(--color-accent-40);
+}
+
+.accent-50 {
+    background-color: var(--color-accent-50);
+}
+
+.accent-60 {
+    background-color: var(--color-accent-60);
+    color: white;
+}
+
+.accent-70 {
+    background-color: var(--color-accent-70);
+    color: white;
+}
+
+/*** Color: Shade ***/
+
+.neutral-10 {
+    background-color: var(--color-neutral-10);
+    color: var(--color-neutral-70);
+}
+
+.neutral-20 {
+    background-color: var(--color-neutral-20);
+    color: var(--color-neutral-70);
+}
+
+.neutral-30 {
+    background-color: var(--color-neutral-30);
+}
+
+.neutral-40 {
+    background-color: var(--color-neutral-40);
+    /* color: white; */
+}
+
+.neutral-50 {
+    background-color: var(--color-neutral-50);
+}
+
+.neutral-60 {
+    background-color: var(--color-neutral-60);
+    color: white;
+}
+
+.neutral-70 {
+    background-color: var(--color-neutral-70);
+    color: white;
+}
