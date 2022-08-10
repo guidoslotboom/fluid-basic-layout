@@ -49,3 +49,7 @@
 .text-right {
     text-align: right;
 }
+
+.text-code {
+    font-family: monospace;
+}

@@ -67,6 +67,24 @@ nav {
  ***
 *****/
 
+code, mark {
+    padding: 0.2rem 0.4rem;
+}
+
+code {
+    
+    background-color: var(--color-neutral-20);
+}
+
+strong {
+    color: var(--color-secondary-50);
+}
+
+mark {
+    background-color: var(--color-accent-30);
+    color: var(--color-accent-70);
+}
+
 .colors {
     display: flex;
     flex-wrap: wrap;

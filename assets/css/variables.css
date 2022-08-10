@@ -44,10 +44,12 @@
     --line-height-md: 1.5;
     --line-height-sm: 1.25;
 
+    --font-weight-abbr: 300;
     --font-weight-body: 400;
     --font-weight-heading: 700;
-    --font-weight-strong: 700;
-    --font-weight-link: 400;
+    --font-weight-link: 700;
+    --font-weight-bold: 700;
+    --font-weight-strong: 900;
 
     --font-family-body: sans-serif;
     --font-family-heading: sans-serif;

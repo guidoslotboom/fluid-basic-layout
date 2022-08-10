@@ -45,16 +45,36 @@ p, li {
     font-size: var(--font-size-md, 1.6rem);
 }
 
+b {
+    font-weight: var(--font-weight-bold, 700);
+}
+
 strong {
-    font-weight: var(--font-weight-strong, 700);
+    font-weight: var(--font-weight-strong, 900);
+}
+
+cite, em, i, q {
+    font-style: italic;
 }
 
 a:link {
     font-weight: var(--font-weight-link, 700);
 }
 
-i, q {
-    font-style: italic;
+abbr {
+    font-weight: var(--font-weight-abbr, 300);
+    text-decoration: underline dotted;
+    text-decoration-color: var(--color-neutral-50);
+    text-underline-offset: 0.2rem;
+}
+
+code {
+    font-family: monospace;
+    font-size: var(--font-size-sm, 1.4rem);
+}
+
+mark {
+    font-weight: 600;    
 }
 
 u {
@@ -63,6 +83,11 @@ u {
 
 s {
     text-decoration: line-through;
+}
+
+samp {
+    font-family: monospace;
+    font-weight: var(--font-weight-bold, 700);
 }
 
 small {
