@@ -28,13 +28,13 @@ body {
     background-color: var(--color-neutral-30);
 }
 
-/* .grid [class*="col"]:nth-child(even) {
-    background-color: lightsteelblue;
+.content__row.show-grid .grid .col:nth-child(even) {
+    background-color: var(--color-neutral-20);
 }
 
-.grid [class*="col"]:nth-child(odd) {
-    background-color: lightblue;
-} */
+.content__row.show-grid .grid .col:nth-child(odd) {
+    background-color: var(--color-neutral-30);
+}
 
 /*****
  ***
