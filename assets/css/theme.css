@@ -110,7 +110,7 @@ nav {
 
 /*****
  ***
- ***   Work In Progress
+ ***   Theme: Link
  ***
 *****/
 
@@ -123,12 +123,25 @@ a:visited {
 }
 
 a:hover {
-    color: var(--color-scheme-link);
+    color: var(--color-primary-30);
+    text-underline-offset: 0.2rem;
+}
+
+a:focus {
+    color: var(--color-primary-30);
+    outline: 0.1rem dashed var(--color-primary-40);
+    outline-offset: 0.2rem;
 }
 
 a:active {
-    color: var(--color-scheme-link);
+    color: var(--color-primary-50);
 }
+
+/*****
+ ***
+ ***   Work In Progress
+ ***
+*****/
 
 code, mark {
     padding: 0.2rem 0.4rem;
@@ -150,8 +163,6 @@ code, mark {
     justify-content: center;
     font-size: var(--font-size-xs, 1.3rem);
 }
-
-
 
 @media (prefers-color-scheme: dark) {
 

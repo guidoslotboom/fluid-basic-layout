@@ -124,7 +124,7 @@ body {
         --color-primary-20: hsla(var(--color-primary), 90%, 100%);
         --color-primary-30: hsla(var(--color-primary), 55%, 100%);
         --color-primary-40: hsla(var(--color-primary), 45%, 100%);
-        --color-primary-50: hsla(var(--color-primary), 35%, 100%);
+        --color-primary-50: hsla(var(--color-primary), 30%, 100%);
         --color-primary-60: hsla(var(--color-primary), 20%, 100%);
         --color-primary-70: hsla(var(--color-primary), 10%, 100%);
         
