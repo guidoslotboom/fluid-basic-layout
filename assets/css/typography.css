@@ -58,13 +58,13 @@ cite, em, i, q {
 }
 
 a:link {
-    font-weight: var(--font-weight-link, 700);
+    text-decoration: underline;
 }
 
 abbr {
     font-weight: var(--font-weight-abbr, 300);
     text-decoration: underline dotted;
-    text-decoration-color: var(--color-neutral-50);
+    text-decoration-color: var(--color-primary-40);
     text-underline-offset: 0.2rem;
 }
 

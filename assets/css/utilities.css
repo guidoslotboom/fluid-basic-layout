@@ -14,6 +14,124 @@
 
 /*****
  ***
+ ***    Utilities: Background Colors
+ ***
+*****/
+
+.bg-primary-10 {
+    background-color: var(--color-primary-10);
+}
+
+.bg-primary-20 {
+    background-color: var(--color-primary-20);
+}
+
+.bg-primary-30 {
+    background-color: var(--color-primary-30);
+}
+
+.bg-primary-40 {
+    background-color: var(--color-primary-40);
+}
+
+.bg-primary-50 {
+    background-color: var(--color-primary-50);
+}
+
+.bg-primary-60 {
+    background-color: var(--color-primary-60);
+}
+
+.bg-primary-70 {
+    background-color: var(--color-primary-70);
+}
+
+.bg-secondary-10 {
+    background-color: var(--color-secondary-10);
+}
+
+.bg-secondary-20 {
+    background-color: var(--color-secondary-20);
+}
+
+.bg-secondary-30 {
+    background-color: var(--color-secondary-30);
+}
+
+.bg-secondary-40 {
+    background-color: var(--color-secondary-40);
+}
+
+.bg-secondary-50 {
+    background-color: var(--color-secondary-50);
+}
+
+.bg-secondary-60 {
+    background-color: var(--color-secondary-60);
+}
+
+.bg-secondary-70 {
+    background-color: var(--color-secondary-70);
+}
+
+.bg-accent-10 {
+    background-color: var(--color-accent-10);
+}
+
+.bg-accent-20 {
+    background-color: var(--color-accent-20);
+}
+
+.bg-accent-30 {
+    background-color: var(--color-accent-30);
+}
+
+.bg-accent-40 {
+    background-color: var(--color-accent-40);
+}
+
+.bg-accent-50 {
+    background-color: var(--color-accent-50);
+}
+
+.bg-accent-60 {
+    background-color: var(--color-accent-60);
+}
+
+.bg-accent-70 {
+    background-color: var(--color-accent-70);
+}
+
+.bg-neutral-10 {
+    background-color: var(--color-neutral-10);
+}
+
+.bg-neutral-20 {
+    background-color: var(--color-neutral-20);
+}
+
+.bg-neutral-30 {
+    background-color: var(--color-neutral-30);
+}
+
+.bg-neutral-40 {
+    background-color: var(--color-neutral-40);
+}
+
+.bg-neutral-50 {
+    background-color: var(--color-neutral-50);
+}
+
+.bg-neutral-60 {
+    background-color: var(--color-neutral-60);
+}
+
+.bg-neutral-70 {
+    background-color: var(--color-neutral-70);
+}
+
+/*****
+ ***
  ***    Utilities: Typography
  ***
 *****/
@@ -52,4 +170,124 @@
 
 .text-code {
     font-family: monospace;
+}
+
+.text-primary-10 {
+    color: var(--color-primary-10);
+}
+
+.text-primary-20 {
+    color: var(--color-primary-20);
+}
+
+.text-primary-30 {
+    color: var(--color-primary-30);
+}
+
+.text-primary-40 {
+    color: var(--color-primary-40);
+}
+
+.text-primary-50 {
+    color: var(--color-primary-50);
+}
+
+.text-primary-60 {
+    color: var(--color-primary-60);
+}
+
+.text-primary-70 {
+    color: var(--color-primary-70);
+}
+
+.text-secondary-10 {
+    color: var(--color-secondary-10);
+}
+
+.text-secondary-20 {
+    color: var(--color-secondary-20);
+}
+
+.text-secondary-30 {
+    color: var(--color-secondary-30);
+}
+
+.text-secondary-40 {
+    color: var(--color-secondary-40);
+}
+
+.text-secondary-50 {
+    color: var(--color-secondary-50);
+}
+
+.text-secondary-60 {
+    color: var(--color-secondary-60);
+}
+
+.text-secondary-70 {
+    color: var(--color-secondary-70);
+}
+
+.text-accent-10 {
+    color: var(--color-accent-10);
+}
+
+.text-accent-20 {
+    color: var(--color-accent-20);
+}
+
+.text-accent-30 {
+    color: var(--color-accent-30);
+}
+
+.text-accent-40 {
+    color: var(--color-accent-40);
+}
+
+.text-accent-50 {
+    color: var(--color-accent-50);
+}
+
+.text-accent-60 {
+    color: var(--color-accent-60);
+}
+
+.text-accent-70 {
+    color: var(--color-accent-70);
+}
+
+.text-neutral-10 {
+    color: var(--color-neutral-10);
+}
+
+.text-neutral-20 {
+    color: var(--color-neutral-20);
+}
+
+.text-neutral-30 {
+    color: var(--color-neutral-30);
+}
+
+.text-neutral-40 {
+    color: var(--color-neutral-40);
+}
+
+.text-neutral-50 {
+    color: var(--color-neutral-50);
+}
+
+.text-neutral-60 {
+    color: var(--color-neutral-60);
+}
+
+.text-neutral-70 {
+    color: var(--color-neutral-70);
+}
+
+.text-base {
+    color: var(--color-scheme-base);
+}
+
+.text-contra {
+    color: var(--color-scheme-contra);
 }
