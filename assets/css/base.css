@@ -6,7 +6,6 @@
 
 blockquote span {
     display: block;
-    margin-bottom: var(--content-space-xs);
 }
 
 blockquote span::before, q::before {
