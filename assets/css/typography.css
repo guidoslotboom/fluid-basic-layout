@@ -94,6 +94,10 @@ small {
     font-size: var(--font-size-sm, 1.4rem);
 }
 
+figcaption {
+    font-size: var(--font-size-xs, 1.3rem);
+}
+
 /*****
  ***
  ***   Typography: Blockquote
