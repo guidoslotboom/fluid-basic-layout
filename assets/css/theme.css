@@ -17,8 +17,8 @@
 *****/
 
 body {
-    background-color: var(--color-scheme-bg);
-    color: var(--color-scheme-base);
+    background-color: var(--color-scheme-body);
+    color: var(--color-scheme-text-base);
 }
 
 .content__row.show-grid .grid .col:nth-child(even) {
@@ -82,7 +82,7 @@ nav {
 .bg-secondary-30,
 .bg-secondary-40,
 .bg-secondary-50 {
-    color: var(--color-scheme-contra);
+    color: var(--color-scheme-text-contra);
 }
 
 .bg-primary-60,
@@ -105,7 +105,7 @@ nav {
 .bg-neutral-30,
 .bg-neutral-40, 
 .bg-neutral-50 {
-    color: var(--color-scheme-base);
+    color: var(--color-scheme-text-base);
 }
 
 /*****
@@ -139,6 +139,16 @@ a:active {
 
 /*****
  ***
+ ***   Theme: Figure & Image
+ ***
+*****/
+
+figcaption {
+    color: var(--color-scheme-text-shade);
+}
+
+/*****
+ ***
  ***   Work In Progress
  ***
 *****/
@@ -146,6 +156,7 @@ a:active {
 code, mark {
     padding: 0.2rem 0.4rem;
 }
+
 .colors {
     display: flex;
     flex-wrap: wrap;
@@ -166,12 +177,16 @@ code, mark {
 
 @media (prefers-color-scheme: dark) {
 
-    .page > *:nth-child(odd) {
+    /* .page > *:nth-child(odd) {
         background-color: var(--color-neutral-60);
-    }
+    } */
 
     .page__footer > div:nth-child(even) {
         background-color: var(--color-neutral-70);
+    }
+
+    .page__footer > div:nth-child(odd) {
+        background-color: var(--color-neutral-60);
     }
 
     code {
@@ -187,12 +202,16 @@ code, mark {
 
 @media (prefers-color-scheme: light) {
 
-    .page > *:nth-child(odd) {
+    /* .page > *:nth-child(odd) {
         background-color: var(--color-neutral-10);
-    }
+    } */
 
     .page__footer > div:nth-child(even) {
         background-color: var(--color-neutral-20);
+    }
+
+    .page__footer > div:nth-child(odd) {
+        background-color: var(--color-neutral-10);
     }
 
     code {

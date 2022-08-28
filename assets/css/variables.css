@@ -109,9 +109,12 @@ body {
         --color-neutral-70: hsla(var(--color-neutral), 5%, 100%);
 
         /*** ***/
-        --color-scheme-bg: hsla(var(--color-neutral), 15%, 100%);
-        --color-scheme-base: var(--white);
-        --color-scheme-contra: var(--black);
+        --color-scheme-body: hsla(var(--color-neutral), 15%, 100%);
+        --color-scheme-background: var(--color-neutral-60);
+        --color-scheme-text-base: var(--white);
+        --color-scheme-text-contra: var(--black);
+        --color-scheme-text-dark: var(--white);
+        --color-scheme-text-shade: var(--color-neutral-20);
         --color-scheme-link: var(--color-primary-40);
     }
 }
@@ -159,9 +162,11 @@ body {
         --color-neutral-70: hsla(var(--color-neutral), 10%, 100%);
         
         /*** ***/
-        --color-scheme-bg: var(--white);
-        --color-scheme-base: hsla(0, 0%, 0%, 100%);
-        --color-scheme-contra: var(--white);
+        --color-scheme-body: var(--white);
+        --color-scheme-background: var(--color-neutral-10);
+        --color-scheme-text-base: var(--black);
+        --color-scheme-tex-contra: var(--white);
+        --color-scheme-text-shade: var(--color-neutral-60);
         --color-scheme-link: var(--color-primary-40);
     }
 }

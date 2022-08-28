@@ -1,6 +1,6 @@
 /*****
  ***
- ***   Blockquote
+ ***   Base: Blockquote
  ***
 *****/
 
@@ -23,7 +23,34 @@ blockquote cite::before {
 
 /*****
  ***
- ***   List
+ ***   Base: Figure, Figcaption & Image
+ ***
+*****/
+
+/* figure {
+    display: flex;
+    flex-direction: column;
+    gap: var(--layout-space-sm);
+    padding: var(--layout-space-sm);
+    align-items: center;
+} */
+
+figure img {
+    width: 100%;
+}
+
+figcaption {
+    display: inline-block;
+}
+
+img {
+    display: block;
+    object-fit: cover;
+}
+
+/*****
+ ***
+ ***   Base: List
  ***
 *****/
 

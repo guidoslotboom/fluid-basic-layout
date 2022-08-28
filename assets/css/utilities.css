@@ -1,15 +1,67 @@
 /*****
  ***
- ***   Utilities: Layout
+ ***    Utilities: Aspect ratio 
  ***
 *****/
 
-.flex {
-    display: flex;
+.ratio-square {
+    aspect-ratio: 1 / 1;
 }
 
-.grid {
-    display: grid;
+.ratio-classic {
+    aspect-ratio: 4 / 3;
+}
+
+.ratio-rectangle {
+    aspect-ratio: 4 / 2;
+}
+
+.ratio-wide {
+    aspect-ratio: 16 / 9;
+}
+
+.ratio-cinema {
+    aspect-ratio: 2.35 / 1;
+}
+
+.ratio-panorama {
+    aspect-ratio: 4 / 1;
+}
+
+[aspect-ratio="1/1"] {
+    aspect-ratio: 1 / 1;
+}
+
+[aspect-ratio="2/1"] {
+    aspect-ratio: 2 / 1;
+}
+
+[aspect-ratio="3/1"] {
+    aspect-ratio: 3 / 1;
+}
+
+[aspect-ratio="3/2"] {
+    aspect-ratio: 3 / 2;
+}
+
+[aspect-ratio="4/1"] {
+    aspect-ratio: 4 / 1;
+}
+
+[aspect-ratio="4/3"] {
+    aspect-ratio: 4 / 3;
+}
+
+[aspect-ratio="5/1"] {
+    aspect-ratio: 5 / 1;
+}
+
+[aspect-ratio="5/4"] {
+    aspect-ratio: 5 / 4;
+}
+
+[aspect-ratio="6/1"] {
+    aspect-ratio: 6 / 1;
 }
 
 /*****
@@ -128,6 +180,20 @@
 
 .bg-neutral-70 {
     background-color: var(--color-neutral-70);
+}
+
+/*****
+ ***
+ ***   Utilities: Layout
+ ***
+*****/
+
+.flex {
+    display: flex;
+}
+
+.grid {
+    display: grid;
 }
 
 /*****
@@ -285,9 +351,16 @@
 }
 
 .text-base {
-    color: var(--color-scheme-base);
+    color: var(--color-scheme-text-base);
 }
 
 .text-contra {
-    color: var(--color-scheme-contra);
+    color: var(--color-scheme-text-contra);
 }
+
+/*****
+ ***
+ ***   Work In Progress
+ ***
+*****/
+
