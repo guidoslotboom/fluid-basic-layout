@@ -25,6 +25,13 @@
     --content-space-sm: calc(var(--content-space) - 0.8rem);
     --content-space-xs: calc(var(--content-space) - 1.2rem);
 
+    /*** Values for Fixed Spaces: margin & padding ***/
+    --fixed-space-xl: 3.2rem;
+    --fixed-space-lg: 1.6rem;
+    --fixed-space-md: 0.8rem;
+    --fixed-space-sm: 0.4rem;
+    --fixed-space-xs: 0.2rem;
+
     /*** Values for Fluid Typography ***/
     --font-size-h1: clamp(3.2rem, 3vw + var(--relative-size), 5.6rem);
     --font-size-h2: clamp(2.6rem, 2vw + var(--relative-size), 4rem);
