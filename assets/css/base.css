@@ -28,7 +28,7 @@ blockquote cite::before {
 *****/
 
 figure {
-    text-align: center;
+    text-align: left;
 }
 
 figure img {
@@ -37,13 +37,30 @@ figure img {
 
 figcaption {
     display: inline-block;
-    /* padding: var(--fixed-space-xs) var(--fixed-space-md); */
-    
+     margin-top: var(--layout-space-xs);
 }
 
 img {
     display: block;
     object-fit: cover;
+}
+
+/*****
+ ***
+ ***   Base: Gallery
+ ***
+*****/
+
+.gallery-item figure {
+    text-align: center;
+}
+
+.gallery-item figure img {
+    padding: var(--fixed-space-md);
+}
+
+.gallery-item figure figcaption {
+    padding: var(--fixed-space-xs) var(--fixed-space-md);
 }
 
 /*****
@@ -76,11 +93,3 @@ img {
 code, mark {
     padding: var(--fixed-space-xs) var(--fixed-space-sm);
 }
-
-/* .gallery figure img {
-    padding: var(--fixed-space-md);
-} */
-
-/* figure.gallery figcaption {
-    margin-top: var(--fixed-space-md);
-} */

@@ -139,13 +139,27 @@ a:active {
 
 /*****
  ***
- ***   Theme: Figure & Image
+ ***   Theme: Figure, Figcaption & Image
  ***
 *****/
 
-figcaption {
+img {
     background-color: var(--color-scheme-background);
+}
+
+figcaption {
     color: var(--color-scheme-text-shade);
+}
+
+/*****
+ ***
+ ***   Theme: Gallery
+ ***
+*****/
+
+.gallery-item figure img,
+.gallery-item figure figcaption {
+    background-color: var(--color-scheme-background);
 }
 
 /*****
@@ -153,11 +167,6 @@ figcaption {
  ***   Work In Progress
  ***
 *****/
-
-/* .gallery a figure,
-.gallery figure img {
-    background-color: var(--color-scheme-background);
-} */
 
 .colors {
     display: flex;
