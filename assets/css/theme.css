@@ -154,9 +154,10 @@ figcaption {
  ***
 *****/
 
-code, mark {
-    padding: 0.2rem 0.4rem;
-}
+/* .gallery a figure,
+.gallery figure img {
+    background-color: var(--color-scheme-background);
+} */
 
 .colors {
     display: flex;

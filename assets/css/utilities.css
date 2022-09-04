@@ -64,6 +64,14 @@
     aspect-ratio: 6 / 1;
 }
 
+[aspect-ratio="16/9"] {
+    aspect-ratio: 16 / 9;
+}
+
+[aspect-ratio="16/10"] {
+    aspect-ratio: 16 / 10;
+}
+
 /*****
  ***
  ***    Utilities: Background Colors
