@@ -118,9 +118,9 @@ body {
         /*** ***/
         --color-scheme-body: hsla(var(--color-neutral), 20%, 100%);
         --color-scheme-background: var(--color-neutral-70);
+        --color-scheme-marked: var(--color-neutral-50);
         --color-scheme-text-base: var(--white);
         --color-scheme-text-contra: var(--black);
-        --color-scheme-text-dark: var(--white);
         --color-scheme-text-shade: var(--color-neutral-20);
         --color-scheme-link: var(--color-primary-40);
     }
@@ -171,6 +171,7 @@ body {
         /*** ***/
         --color-scheme-body: hsla(var(--color-neutral), 100%, 100%);
         --color-scheme-background: var(--color-neutral-10);
+        --color-scheme-marked: var(--color-neutral-20);
         --color-scheme-text-base: var(--black);
         --color-scheme-tex-contra: var(--white);
         --color-scheme-text-shade: var(--color-neutral-60);

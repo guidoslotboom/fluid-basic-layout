@@ -31,13 +31,9 @@ figure {
     text-align: left;
 }
 
-figure img {
-    width: 100%;
-}
-
 figcaption {
     display: inline-block;
-     margin-top: var(--layout-space-xs);
+    padding: var(--fixed-space-md) var(--fixed-space-lg);
 }
 
 img {
@@ -45,22 +41,25 @@ img {
     object-fit: cover;
 }
 
-/*****
- ***
- ***   Base: Gallery
- ***
-*****/
+figure img {
+    width: 100%;
+}
 
-.gallery-item figure {
+figure:has(img + figcaption) figcaption {
+    display: block;
+}
+
+figure:has(a) {
     text-align: center;
 }
 
-.gallery-item figure img {
+figure:has(a) img {
     padding: var(--fixed-space-md);
 }
 
-.gallery-item figure figcaption {
-    padding: var(--fixed-space-xs) var(--fixed-space-md);
+figure:has(a) figcaption {
+    padding: var(--fixed-space-sm) var(--fixed-space-md);
+    margin-top: var(--layout-space-xs);
 }
 
 /*****

@@ -151,15 +151,17 @@ figcaption {
     color: var(--color-scheme-text-shade);
 }
 
-/*****
- ***
- ***   Theme: Gallery
- ***
-*****/
-
-.gallery-item figure img,
-.gallery-item figure figcaption {
+figure:has(a) figcaption {
     background-color: var(--color-scheme-background);
+}
+
+figure:has(a) a:hover img,
+figure:has(a) a:hover + figcaption {
+    background-color: var(--color-scheme-marked);
+}
+
+figure:has(img + figcaption) figcaption {
+    background-color: var(--color-scheme-marked);
 }
 
 /*****
