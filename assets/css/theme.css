@@ -151,12 +151,16 @@ figcaption {
     color: var(--color-scheme-text-shade);
 }
 
-figure:has(a) figcaption {
+figure a {
+    display: block;
+}
+
+figure figcaption {
     background-color: var(--color-scheme-background);
 }
 
-figure:has(a) a:hover img,
-figure:has(a) a:hover + figcaption {
+figure a:hover img,
+figure a:hover + figcaption {
     background-color: var(--color-scheme-marked);
 }
 
