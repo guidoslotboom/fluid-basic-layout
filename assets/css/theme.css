@@ -148,7 +148,7 @@ img {
 }
 
 figcaption {
-    color: var(--color-scheme-text-shade);
+    color: var(--color-scheme-text-subtle);
 }
 
 figure a {
@@ -160,12 +160,14 @@ figure figcaption {
 }
 
 figure a:hover img,
-figure a:hover + figcaption {
-    background-color: var(--color-scheme-marked);
+figure a:hover + figcaption,
+figure:has(img + figcaption) figcaption {
+    background-color: var(--color-neutral-50);
 }
 
-figure:has(img + figcaption) figcaption {
-    background-color: var(--color-scheme-marked);
+figure a:focus {
+    outline: var(--fixed-space-xs) solid var(--color-primary-40);
+    outline-offset: 0rem;
 }
 
 /*****
@@ -173,6 +175,10 @@ figure:has(img + figcaption) figcaption {
  ***   Work In Progress
  ***
 *****/
+
+code {
+    color: var(--color-scheme-text-base);
+}
 
 .colors {
     display: flex;
@@ -207,13 +213,17 @@ figure:has(img + figcaption) figcaption {
     }
 
     code {
-        background-color: var(--color-neutral-50);
-        color: var(--color-neutral-20);
+        background-color: var(--color-neutral-40);
     }
     
     mark {
         background-color: var(--color-accent-40);
         color: var(--color-accent-70);
+    }
+
+    blockquote span,
+    cite {
+        color: var(--color-neutral-10);
     }
 }
 
@@ -232,12 +242,16 @@ figure:has(img + figcaption) figcaption {
     }
 
     code {
-        background-color: var(--color-neutral-20);
-        color: var(--color-neutral-70);
+        background-color: var(--color-neutral-30);
     }
     
     mark {
         background-color: var(--color-accent-30);
         color: var(--color-accent-70);
+    }
+
+    blockquote span,
+    cite {
+        color: var(--color-neutral-70);
     }
 }
