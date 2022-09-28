@@ -82,7 +82,7 @@ nav {
 .bg-secondary-30,
 .bg-secondary-40,
 .bg-secondary-50 {
-    color: var(--color-scheme-text-contra);
+    color: var(--color-scheme-text-contrast);
 }
 
 .bg-primary-60,
@@ -92,7 +92,8 @@ nav {
 .bg-accent-60,
 .bg-accent-70,
 .bg-neutral-60,
-.bg-neutral-70 {
+.bg-neutral-70,
+.bg-neutral-50 {
     color: var(--white);
 }
 
@@ -103,8 +104,7 @@ nav {
 }
 
 .bg-neutral-30,
-.bg-neutral-40, 
-.bg-neutral-50 {
+.bg-neutral-40 {
     color: var(--color-scheme-text-base);
 }
 
@@ -114,27 +114,31 @@ nav {
  ***
 *****/
 
-a:link {
-    color: var(--color-scheme-link);
-}
-
+a:link,
 a:visited {
     color: var(--color-scheme-link);
 }
 
 a:hover {
-    color: var(--color-primary-30);
-    text-underline-offset: 0.2rem;
+    color: var(--color-primary-50);
 }
 
 a:focus {
     color: var(--color-primary-30);
-    outline: 0.1rem dashed var(--color-primary-40);
-    outline-offset: 0.2rem;
+    outline-color: var(--color-primary-40);
+    outline-style: solid;
 }
 
-a:active {
-    color: var(--color-primary-50);
+.text-accent:link {
+    color: var(--color-accent-40);
+}
+
+.text-accent:hover {
+    color: var(--color-accent-50);
+}
+
+.text-contrast:link {
+    color: var(--color-scheme-text-base);
 }
 
 /*****
@@ -144,7 +148,7 @@ a:active {
 *****/
 
 img {
-    background-color: var(--color-scheme-background);
+    background-color: var(--color-scheme-base);
 }
 
 figcaption {
@@ -156,7 +160,7 @@ figure a {
 }
 
 figure figcaption {
-    background-color: var(--color-scheme-background);
+    background-color: var(--color-scheme-base);
 }
 
 figure a:hover img,
@@ -166,8 +170,7 @@ figure:has(img + figcaption) figcaption {
 }
 
 figure a:focus {
-    outline: var(--fixed-space-xs) solid var(--color-primary-40);
-    outline-offset: 0rem;
+    outline-color: var(--color-primary-40);
 }
 
 /*****
@@ -179,6 +182,84 @@ figure a:focus {
 code {
     color: var(--color-scheme-text-base);
 }
+
+.button {
+    display: inline-block;
+    padding: var(--layout-space-xs) var(--layout-space-sm);
+    border: 0.2rem solid;
+    margin-block: var(--fixed-space-sm);
+    text-decoration: none;
+}
+
+/*** ***/
+
+.filled-primary:link {
+    border-color: var(--color-primary-40);
+    background-color: var(--color-primary-40);
+    color: var(--color-scheme-text-contrast);
+}
+
+.outline-primary:link {
+    border-color: var(--color-primary-40);
+    background-color: transparent;
+    color: var(--color-primary-40);
+}
+
+.filled-primary:hover,
+.outline-primary:hover {
+    border-color: var(--color-primary-50);
+    background-color: var(--color-primary-50);
+    color: var(--color-scheme-text-contrast);
+}
+
+/*** ***/
+
+.filled-accent:link {
+    border-color: var(--color-accent-40);
+    background-color: var(--color-accent-40);
+    color: var(--color-scheme-text-contrast);
+}
+
+.outline-accent:link {
+    border-color: var(--color-accent-40);
+    background-color: transparent;
+    color: var(--color-accent-40);
+}
+
+.filled-accent:hover,
+.outline-accent:hover {
+    border-color: var(--color-accent-50);
+    background-color: var(--color-accent-50);
+    color: var(--color-scheme-text-contrast);
+}
+
+/*** ***/
+
+.filled-neutral:link {
+    border-color: var(--color-scheme-subtle);
+    background-color: var(--color-scheme-subtle);
+}
+
+.outline-neutral:link {
+    border-color: var(--color-scheme-subtle);
+    background-color: transparent;
+}
+
+/*** ***/
+
+.filled-contrast:link {
+    border-color: var(--color-scheme-contrast);
+    background-color: var(--color-scheme-contrast);
+    color: var(--color-scheme-text-contrast);
+}
+
+.outline-contrast:link {
+    border-color: var(--color-scheme-contrast);
+    background-color: transparent;
+    color: var(--color-scheme-text-base);
+}
+
+/*** ***/
 
 .colors {
     display: flex;
@@ -225,6 +306,34 @@ code {
     cite {
         color: var(--color-neutral-10);
     }
+
+    /*** ***/
+
+    .text-neutral:link,
+    .text-neutral:visited {
+        color: var(--color-neutral-20);
+    }
+
+    .text-neutral:hover,
+    .text-contrast:hover {
+        color: var(--color-neutral-30);
+    }
+
+    /*** ***/
+
+    .filled-neutral:hover,
+    .outline-neutral:hover {
+        border-color: var(--color-neutral-70);
+        background-color: var(--color-neutral-70);
+        color: var(--color-scheme-text-base);
+    }
+
+    .filled-contrast:hover,
+    .outline-contrast:hover {
+        border-color: var(--color-neutral-20);
+        background-color: var(--color-neutral-20);
+        color: var(--color-scheme-text-contrast);
+    }
 }
 
 @media (prefers-color-scheme: light) {
@@ -253,5 +362,33 @@ code {
     blockquote span,
     cite {
         color: var(--color-neutral-70);
+    }
+
+    /*** ***/
+
+    .text-neutral:link,
+    .text-neutral:visited {
+        color: var(--color-neutral-60);
+    }
+
+    .text-neutral:hover,
+    .text-contrast:hover {
+        color: var(--color-neutral-50);
+    }
+
+    /*** ***/
+
+    .filled-neutral:hover,
+    .outline-neutral:hover {
+        border-color: var(--color-neutral-30);
+        background-color: var(--color-neutral-30);
+        color: var(--color-scheme-text-base);
+    }
+
+    .filled-contrast:hover,
+    .outline-contrast:hover {
+        border-color: var(--color-neutral-50);
+        background-color: var(--color-neutral-50);
+        color: var(--color-scheme-text-contrast);
     }
 }

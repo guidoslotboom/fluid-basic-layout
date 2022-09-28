@@ -190,6 +190,18 @@
     background-color: var(--color-neutral-70);
 }
 
+.bg-color-base {
+    background-color: var(--color-scheme-base);
+}
+
+.bg-color-contrast {
+    background-color: var(--color-scheme-contrast);
+}
+
+.bg-color-subtle {
+    background-color: var(--color-scheme-subtle);
+}
+
 /*****
  ***
  ***   Utilities: Layout
@@ -202,6 +214,18 @@
 
 .grid {
     display: grid;
+}
+
+/*****
+ ***
+ ***   Utilities: List
+ ***
+*****/
+
+ul.list-style-none,
+ol.list-style-none {
+    margin-left: 0;
+    list-style: none;
 }
 
 /*****
@@ -734,8 +758,8 @@
     color: var(--color-scheme-text-base);
 }
 
-.text-contra {
-    color: var(--color-scheme-text-contra);
+.text-contrast {
+    color: var(--color-scheme-text-contrast);
 }
 
 /*****

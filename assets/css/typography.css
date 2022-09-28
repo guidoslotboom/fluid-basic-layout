@@ -100,6 +100,25 @@ figcaption {
 
 /*****
  ***
+ ***   Typography: Anchor & States
+ ***
+*****/
+
+a:hover {
+    text-underline-offset: var(--fixed-space-xs);
+}
+
+a:focus {
+    outline-width: 0.2rem;
+    outline-offset: var(--fixed-space-xs);
+}
+
+.button:focus {
+    outline-width: 0.2rem;
+}
+
+/*****
+ ***
  ***   Typography: Blockquote
  ***
 *****/

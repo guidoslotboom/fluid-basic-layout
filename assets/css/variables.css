@@ -77,18 +77,18 @@ body {
     body {
         /*** ***/
         --color-primary: 192, 100%;
-        --color-primary-10: hsla(var(--color-primary), 95%, 100%);
-        --color-primary-20: hsla(var(--color-primary), 85%, 100%);
-        --color-primary-30: hsla(var(--color-primary), 75%, 100%);
-        --color-primary-40: hsla(var(--color-primary), 55%, 100%);
-        --color-primary-50: hsla(var(--color-primary), 40%, 100%);
-        --color-primary-60: hsla(var(--color-primary), 10%, 100%);
-        --color-primary-70: hsla(var(--color-primary), 5%, 100%);
+        --color-primary-10: hsla(var(--color-primary), 96%, 100%);
+        --color-primary-20: hsla(var(--color-primary), 84%, 100%);
+        --color-primary-30: hsla(var(--color-primary), 72%, 100%);
+        --color-primary-40: hsla(var(--color-primary), 56%, 100%);
+        --color-primary-50: hsla(var(--color-primary), 44%, 100%);
+        --color-primary-60: hsla(var(--color-primary), 8%, 100%);
+        --color-primary-70: hsla(var(--color-primary), 4%, 100%);
         
         /*** ***/
-        --color-secondary: 288, 92%;
-        --color-secondary-10: hsla(var(--color-secondary), 95%, 100%);
-        --color-secondary-20: hsla(var(--color-secondary), 90%, 100%);
+        --color-secondary: 288, 100%;
+        --color-secondary-10: hsla(var(--color-secondary), 96%, 100%);
+        --color-secondary-20: hsla(var(--color-secondary), 88%, 100%);
         --color-secondary-30: hsla(var(--color-secondary), 80%, 100%);
         --color-secondary-40: hsla(var(--color-secondary), 70%, 100%);
         --color-secondary-50: hsla(var(--color-secondary), 60%, 100%);
@@ -96,28 +96,30 @@ body {
         --color-secondary-70: hsla(var(--color-secondary), 5%, 100%);
         
         /*** ***/
-        --color-accent: 170, 92%;
-        --color-accent-10: hsla(var(--color-accent), 95%, 100%);
-        --color-accent-20: hsla(var(--color-accent), 85%, 100%);
-        --color-accent-30: hsla(var(--color-accent), 75%, 100%);
-        --color-accent-40: hsla(var(--color-accent), 55%, 100%);
+        --color-accent: 164, 100%;
+        --color-accent-10: hsla(var(--color-accent), 92%, 100%);
+        --color-accent-20: hsla(var(--color-accent), 84%, 100%);
+        --color-accent-30: hsla(var(--color-accent), 72%, 100%);
+        --color-accent-40: hsla(var(--color-accent), 48%, 100%);
         --color-accent-50: hsla(var(--color-accent), 40%, 100%);
-        --color-accent-60: hsla(var(--color-accent), 10%, 100%);
-        --color-accent-70: hsla(var(--color-accent), 5%, 100%);
+        --color-accent-60: hsla(var(--color-accent), 8%, 100%);
+        --color-accent-70: hsla(var(--color-accent), 4%, 100%);
         
         /*** ***/
         --color-neutral: 224, 80%;
-        --color-neutral-10: hsla(var(--color-neutral), 90%, 100%);
-        --color-neutral-20: hsla(var(--color-neutral), 80%, 100%);
-        --color-neutral-30: hsla(var(--color-neutral), 55%, 100%);
-        --color-neutral-40: hsla(var(--color-neutral), 45%, 100%);
-        --color-neutral-50: hsla(var(--color-neutral), 30%, 100%);
-        --color-neutral-60: hsla(var(--color-neutral), 15%, 100%);
-        --color-neutral-70: hsla(var(--color-neutral), 10%, 100%);
+        --color-neutral-10: hsla(var(--color-neutral), 92%, 100%);
+        --color-neutral-20: hsla(var(--color-neutral), 84%, 100%);
+        --color-neutral-30: hsla(var(--color-neutral), 72%, 100%);
+        --color-neutral-40: hsla(var(--color-neutral), 44%, 100%);
+        --color-neutral-50: hsla(var(--color-neutral), 28%, 100%);
+        --color-neutral-60: hsla(var(--color-neutral), 12%, 100%);
+        --color-neutral-70: hsla(var(--color-neutral), 8%, 100%);
 
         /*** ***/
         --color-scheme-body: hsla(var(--color-neutral), 20%, 100%);
-        --color-scheme-background: var(--color-neutral-70);
+        --color-scheme-base: var(--color-neutral-60);
+        --color-scheme-contrast: var(--color-neutral-10);
+        --color-scheme-subtle: var(--color-neutral-50);
         --color-scheme-text-base: var(--white);
         --color-scheme-text-contrast: var(--black);
         --color-scheme-text-subtle: var(--color-neutral-10);
@@ -128,7 +130,7 @@ body {
 @media (prefers-color-scheme: light) {
     body {
         /*** ***/
-        --color-primary: 224, 84%;
+        --color-primary: 224, 72%;
         --color-primary-10: hsla(var(--color-primary), 95%, 100%);
         --color-primary-20: hsla(var(--color-primary), 90%, 100%);
         --color-primary-30: hsla(var(--color-primary), 55%, 100%);
@@ -148,7 +150,7 @@ body {
         --color-secondary-70: hsla(var(--color-secondary), 10%, 100%);
         
         /*** ***/
-        --color-accent: 168, 96%;
+        --color-accent: 140, 52%;
         --color-accent-10: hsla(var(--color-accent), 95%, 100%);
         --color-accent-20: hsla(var(--color-accent), 85%, 100%);
         --color-accent-30: hsla(var(--color-accent), 50%, 100%);
@@ -158,18 +160,20 @@ body {
         --color-accent-70: hsla(var(--color-accent), 10%, 100%);
         
         /*** ***/
-        --color-neutral: 216, 8%;
+        --color-neutral: 216, 24%;
         --color-neutral-10: hsla(var(--color-neutral), 95%, 100%);
         --color-neutral-20: hsla(var(--color-neutral), 90%, 100%);
         --color-neutral-30: hsla(var(--color-neutral), 85%, 100%);
-        --color-neutral-40: hsla(var(--color-neutral), 80%, 100%);
-        --color-neutral-50: hsla(var(--color-neutral), 75%, 100%);
+        --color-neutral-40: hsla(var(--color-neutral), 65%, 100%);
+        --color-neutral-50: hsla(var(--color-neutral), 50%, 100%);
         --color-neutral-60: hsla(var(--color-neutral), 30%, 100%);
         --color-neutral-70: hsla(var(--color-neutral), 15%, 100%);
         
         /*** ***/
-        --color-scheme-body: hsla(var(--color-neutral), 100%, 100%);
-        --color-scheme-background: var(--color-neutral-10);
+        --color-scheme-body: hsla(var(--color-neutral), 99%, 100%);
+        --color-scheme-base: var(--color-neutral-10);
+        --color-scheme-contrast: var(--color-neutral-60);
+        --color-scheme-subtle: var(--color-neutral-20);
         --color-scheme-text-base: var(--black);
         --color-scheme-text-contrast: var(--white);
         --color-scheme-text-subtle: var(--color-neutral-70);

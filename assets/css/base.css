@@ -62,6 +62,11 @@ figure:has(img + figcaption) figcaption {
     display: block;
 }
 
+figure a:focus {
+    outline-width: var(--fixed-space-xs);
+    outline-offset: 0rem;
+}
+
 /*****
  ***
  ***   Base: List
