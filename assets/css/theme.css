@@ -21,6 +21,18 @@ body {
     color: var(--color-scheme-text-base);
 }
 
+.page__header {
+    background-color: var(--color-neutral-20);
+}
+
+.page__footer > div:nth-child(even) {
+    background-color: var(--color-neutral-10);
+}
+
+.page__footer > div:nth-child(odd) {
+    background-color: var(--color-neutral-20);
+}
+
 .content__row.show-grid .grid .col:nth-child(even) {
     background-color: var(--color-neutral-30);
 }
@@ -56,24 +68,11 @@ nav {
  ***
 *****/
 
-.bg-primary-10,
-.bg-primary-20 {
-    color: var(--color-primary-70);
-}
-
-.bg-secondary-10,
-.bg-secondary-20 {
-    color: var(--color-secondary-70);
-}
-
-.bg-accent-10,
-.bg-accent-20 {
-    color: var(--color-accent-70);
-}
-
 .bg-neutral-10,
-.bg-neutral-20 {
-    color: var(--color-neutral-70);
+.bg-neutral-20,
+.bg-neutral-30,
+.bg-neutral-40 {
+    color: var(--color-scheme-text-base);
 }
 
 .bg-primary-30,
@@ -81,7 +80,10 @@ nav {
 .bg-primary-50,
 .bg-secondary-30,
 .bg-secondary-40,
-.bg-secondary-50 {
+.bg-secondary-50,
+.bg-neutral-60,
+.bg-neutral-70,
+.bg-neutral-50  {
     color: var(--color-scheme-text-contrast);
 }
 
@@ -90,22 +92,31 @@ nav {
 .bg-secondary-70,
 .bg-secondary-60,
 .bg-accent-60,
-.bg-accent-70,
-.bg-neutral-60,
-.bg-neutral-70,
-.bg-neutral-50 {
+.bg-accent-70 {
     color: var(--white);
 }
 
+.bg-primary-10,
+.bg-primary-20,
+.bg-secondary-10,
+.bg-secondary-20,
+.bg-accent-10,
+.bg-accent-20,
 .bg-accent-30,
 .bg-accent-40,
 .bg-accent-50 {
     color: var(--black);
 }
 
-.bg-neutral-30,
-.bg-neutral-40 {
-    color: var(--color-scheme-text-base);
+/*****
+ ***
+ ***   Theme: Blockquote
+ ***
+*****/
+
+blockquote span,
+cite {
+    color: var(--color-neutral-70);
 }
 
 /*****
@@ -116,7 +127,7 @@ nav {
 
 a:link,
 a:visited {
-    color: var(--color-scheme-link);
+    color: var(--color-primary-40);
 }
 
 a:hover {
@@ -141,6 +152,15 @@ a:focus {
     color: var(--color-scheme-text-base);
 }
 
+.text-neutral:link {
+    color: var(--color-neutral-60);
+}
+
+.text-neutral:hover,
+.text-contrast:hover {
+    color: var(--color-neutral-50);
+}
+
 /*****
  ***
  ***   Theme: Figure, Figcaption & Image
@@ -148,11 +168,11 @@ a:focus {
 *****/
 
 img {
-    background-color: var(--color-scheme-base);
+    background-color: var(--color-neutral-20);
 }
 
 figcaption {
-    color: var(--color-scheme-text-subtle);
+    color: var(--color-neutral-60);
 }
 
 figure a {
@@ -160,13 +180,13 @@ figure a {
 }
 
 figure figcaption {
-    background-color: var(--color-scheme-base);
+    background-color: var(--color-neutral-20);
 }
 
 figure a:hover img,
 figure a:hover + figcaption,
 figure:has(img + figcaption) figcaption {
-    background-color: var(--color-neutral-50);
+    background-color: var(--color-neutral-30);
 }
 
 figure a:focus {
@@ -236,27 +256,43 @@ code {
 /*** ***/
 
 .filled-neutral:link {
-    border-color: var(--color-scheme-subtle);
-    background-color: var(--color-scheme-subtle);
+    border-color: var(--color-neutral-20);
+    background-color: var(--color-neutral-20);
+    color: var(--color-neutral-60);
 }
 
 .outline-neutral:link {
-    border-color: var(--color-scheme-subtle);
+    border-color: var(--color-neutral-20);
     background-color: transparent;
+    color: var(--color-neutral-60);
+}
+
+.filled-neutral:hover,
+.outline-neutral:hover {
+    border-color: var(--color-neutral-30);
+    background-color: var(--color-neutral-30);
+    color: var(--color-scheme-text-base);
 }
 
 /*** ***/
 
 .filled-contrast:link {
-    border-color: var(--color-scheme-contrast);
-    background-color: var(--color-scheme-contrast);
-    color: var(--color-scheme-text-contrast);
+    border-color: var(--color-neutral-60);
+    background-color: var(--color-neutral-60);
+    color: var(--color-neutral-10);
 }
 
 .outline-contrast:link {
-    border-color: var(--color-scheme-contrast);
+    border-color: var(--color-neutral-60);
     background-color: transparent;
-    color: var(--color-scheme-text-base);
+    color: var(--color-neutral-70);
+}
+
+.filled-contrast:hover,
+.outline-contrast:hover {
+    border-color: var(--color-neutral-50);
+    background-color: var(--color-neutral-50);
+    color: var(--color-neutral-10);
 }
 
 /*** ***/
@@ -281,18 +317,6 @@ code {
 
 @media (prefers-color-scheme: dark) {
 
-    .page__header {
-        background-color: var(--color-neutral-60);
-    }
-
-    .page__footer > div:nth-child(even) {
-        background-color: var(--color-neutral-70);
-    }
-
-    .page__footer > div:nth-child(odd) {
-        background-color: var(--color-neutral-60);
-    }
-
     code {
         background-color: var(--color-neutral-40);
     }
@@ -301,54 +325,9 @@ code {
         background-color: var(--color-accent-40);
         color: var(--color-accent-70);
     }
-
-    blockquote span,
-    cite {
-        color: var(--color-neutral-10);
-    }
-
-    /*** ***/
-
-    .text-neutral:link,
-    .text-neutral:visited {
-        color: var(--color-neutral-20);
-    }
-
-    .text-neutral:hover,
-    .text-contrast:hover {
-        color: var(--color-neutral-30);
-    }
-
-    /*** ***/
-
-    .filled-neutral:hover,
-    .outline-neutral:hover {
-        border-color: var(--color-neutral-70);
-        background-color: var(--color-neutral-70);
-        color: var(--color-scheme-text-base);
-    }
-
-    .filled-contrast:hover,
-    .outline-contrast:hover {
-        border-color: var(--color-neutral-20);
-        background-color: var(--color-neutral-20);
-        color: var(--color-scheme-text-contrast);
-    }
 }
 
 @media (prefers-color-scheme: light) {
-
-    .page__header {
-        background-color: var(--color-neutral-10);
-    }
-
-    .page__footer > div:nth-child(even) {
-        background-color: var(--color-neutral-20);
-    }
-
-    .page__footer > div:nth-child(odd) {
-        background-color: var(--color-neutral-10);
-    }
 
     code {
         background-color: var(--color-neutral-30);
@@ -357,38 +336,5 @@ code {
     mark {
         background-color: var(--color-accent-30);
         color: var(--color-accent-70);
-    }
-
-    blockquote span,
-    cite {
-        color: var(--color-neutral-70);
-    }
-
-    /*** ***/
-
-    .text-neutral:link,
-    .text-neutral:visited {
-        color: var(--color-neutral-60);
-    }
-
-    .text-neutral:hover,
-    .text-contrast:hover {
-        color: var(--color-neutral-50);
-    }
-
-    /*** ***/
-
-    .filled-neutral:hover,
-    .outline-neutral:hover {
-        border-color: var(--color-neutral-30);
-        background-color: var(--color-neutral-30);
-        color: var(--color-scheme-text-base);
-    }
-
-    .filled-contrast:hover,
-    .outline-contrast:hover {
-        border-color: var(--color-neutral-50);
-        background-color: var(--color-neutral-50);
-        color: var(--color-scheme-text-contrast);
     }
 }

@@ -190,18 +190,6 @@
     background-color: var(--color-neutral-70);
 }
 
-.bg-color-base {
-    background-color: var(--color-scheme-base);
-}
-
-.bg-color-contrast {
-    background-color: var(--color-scheme-contrast);
-}
-
-.bg-color-subtle {
-    background-color: var(--color-scheme-subtle);
-}
-
 /*****
  ***
  ***   Utilities: Layout
