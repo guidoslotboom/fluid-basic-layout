@@ -1,5 +1,22 @@
 /*****
  ***
+ ***   Theme: Button
+ ***
+*****/
+
+.button {
+    display: inline-block;
+    margin-block: var(--fixed-space-sm);
+}
+
+[class*="button-filled"],
+[class*="button-outline"] {
+    padding: var(--layout-space-xs) var(--layout-space-sm);
+    border-style: solid;
+}
+
+/*****
+ ***
  ***   Base: Blockquote
  ***
 *****/

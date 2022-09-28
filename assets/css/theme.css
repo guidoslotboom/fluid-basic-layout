@@ -47,9 +47,18 @@ body {
  ***
 *****/
 
-nav {
+header nav {
     display: flex;
     gap: var(--layout-space-md);
+}
+
+header nav a:link,
+header nav a:visited {
+    color: var(--color-neutral-60);
+}
+
+header nav a:hover {
+    color: var(--color-neutral-50);
 }
 
 /*****
@@ -60,6 +69,15 @@ nav {
 
 .page__footer > div:nth-child(even) .flex {
     padding-block: var(--layout-space-sm);
+}
+
+footer a:link,
+footer a:visited {
+    color: var(--color-neutral-60);
+}
+
+footer a:hover {
+    color: var(--color-neutral-50);
 }
 
 /*****
@@ -140,25 +158,160 @@ a:focus {
     outline-style: solid;
 }
 
-.text-accent:link {
+/*** Link: Primary ***/
+
+.link-primary:link {
+    color: var(--color-primary-40);
+}
+
+.link-primary:hover {
+    color: var(--color-primary-50);
+}
+
+/*** Link: Accent ***/
+
+.link-accent:link {
     color: var(--color-accent-40);
 }
 
-.text-accent:hover {
+.link-accent:hover {
     color: var(--color-accent-50);
 }
 
-.text-contrast:link {
-    color: var(--color-scheme-text-base);
-}
+/*** Link: Neutral ***/
 
-.text-neutral:link {
+.link-neutral:link {
     color: var(--color-neutral-60);
 }
 
-.text-neutral:hover,
-.text-contrast:hover {
+.link-neutral:hover {
     color: var(--color-neutral-50);
+}
+
+/*** Link: Contrast ***/
+
+.link-contrast:link {
+    color: var(--color-scheme-text-base);
+}
+
+.link-contrast:hover {
+    color: var(--color-neutral-50);
+}
+
+/*****
+ ***
+ ***   Theme: Button
+ ***
+*****/
+
+.button {
+    border-width: 0.2rem;
+    border-color: transparent;
+    background-color: transparent;
+}
+
+.button:link {
+    color: var(--color-neutral-60);
+    text-decoration: none;
+}
+
+.button:hover {
+    color: var(--color-scheme-text-base);
+    text-decoration: underline;
+}
+
+.button-filled:hover {
+    border-color: var(--color-neutral-30);
+    background-color: var(--color-neutral-30);
+}
+
+.button-outline:hover {
+    border-color: var(--color-neutral-30);
+    background-color: transparent;
+}
+
+/*** Button: Primary ***/
+
+.button-filled-primary:link {
+    border-color: var(--color-primary-40);
+    background-color: var(--color-primary-40);
+    color: var(--color-scheme-text-contrast);
+}
+
+.button-outline-primary:link {
+    border-color: var(--color-primary-40);
+    background-color: transparent;
+    color: var(--color-primary-40);
+}
+
+.button-filled-primary:hover,
+.button-outline-primary:hover {
+    border-color: var(--color-primary-50);
+    background-color: var(--color-primary-50);
+    color: var(--color-scheme-text-contrast);
+}
+
+/*** Button: Accent ***/
+
+.button-filled-accent:link {
+    border-color: var(--color-accent-40);
+    background-color: var(--color-accent-40);
+    color: var(--color-scheme-text-contrast);
+}
+
+.button-outline-accent:link {
+    border-color: var(--color-accent-40);
+    background-color: transparent;
+    color: var(--color-accent-40);
+}
+
+.button-filled-accent:hover,
+.button-outline-accent:hover {
+    border-color: var(--color-accent-50);
+    background-color: var(--color-accent-50);
+    color: var(--color-scheme-text-contrast);
+}
+
+/*** Button: Neutral ***/
+
+.button-filled-neutral:link {
+    border-color: var(--color-neutral-20);
+    background-color: var(--color-neutral-20);
+    color: var(--color-neutral-60);
+}
+
+.button-outline-neutral:link {
+    border-color: var(--color-neutral-20);
+    background-color: transparent;
+    color: var(--color-neutral-60);
+}
+
+.button-filled-neutral:hover,
+.button-outline-neutral:hover {
+    border-color: var(--color-neutral-30);
+    background-color: var(--color-neutral-30);
+    color: var(--color-scheme-text-base);
+}
+
+/*** Button: Contrast ***/
+
+.button-filled-contrast:link {
+    border-color: var(--color-neutral-60);
+    background-color: var(--color-neutral-60);
+    color: var(--color-neutral-10);
+}
+
+.button-outline-contrast:link {
+    border-color: var(--color-neutral-60);
+    background-color: transparent;
+    color: var(--color-neutral-70);
+}
+
+.button-filled-contrast:hover,
+.button-outline-contrast:hover {
+    border-color: var(--color-neutral-50);
+    background-color: var(--color-neutral-50);
+    color: var(--color-neutral-10);
 }
 
 /*****
@@ -203,97 +356,7 @@ code {
     color: var(--color-scheme-text-base);
 }
 
-.button {
-    display: inline-block;
-    padding: var(--layout-space-xs) var(--layout-space-sm);
-    border: 0.2rem solid;
-    margin-block: var(--fixed-space-sm);
-    text-decoration: none;
-}
 
-/*** ***/
-
-.filled-primary:link {
-    border-color: var(--color-primary-40);
-    background-color: var(--color-primary-40);
-    color: var(--color-scheme-text-contrast);
-}
-
-.outline-primary:link {
-    border-color: var(--color-primary-40);
-    background-color: transparent;
-    color: var(--color-primary-40);
-}
-
-.filled-primary:hover,
-.outline-primary:hover {
-    border-color: var(--color-primary-50);
-    background-color: var(--color-primary-50);
-    color: var(--color-scheme-text-contrast);
-}
-
-/*** ***/
-
-.filled-accent:link {
-    border-color: var(--color-accent-40);
-    background-color: var(--color-accent-40);
-    color: var(--color-scheme-text-contrast);
-}
-
-.outline-accent:link {
-    border-color: var(--color-accent-40);
-    background-color: transparent;
-    color: var(--color-accent-40);
-}
-
-.filled-accent:hover,
-.outline-accent:hover {
-    border-color: var(--color-accent-50);
-    background-color: var(--color-accent-50);
-    color: var(--color-scheme-text-contrast);
-}
-
-/*** ***/
-
-.filled-neutral:link {
-    border-color: var(--color-neutral-20);
-    background-color: var(--color-neutral-20);
-    color: var(--color-neutral-60);
-}
-
-.outline-neutral:link {
-    border-color: var(--color-neutral-20);
-    background-color: transparent;
-    color: var(--color-neutral-60);
-}
-
-.filled-neutral:hover,
-.outline-neutral:hover {
-    border-color: var(--color-neutral-30);
-    background-color: var(--color-neutral-30);
-    color: var(--color-scheme-text-base);
-}
-
-/*** ***/
-
-.filled-contrast:link {
-    border-color: var(--color-neutral-60);
-    background-color: var(--color-neutral-60);
-    color: var(--color-neutral-10);
-}
-
-.outline-contrast:link {
-    border-color: var(--color-neutral-60);
-    background-color: transparent;
-    color: var(--color-neutral-70);
-}
-
-.filled-contrast:hover,
-.outline-contrast:hover {
-    border-color: var(--color-neutral-50);
-    background-color: var(--color-neutral-50);
-    color: var(--color-neutral-10);
-}
 
 /*** ***/
 
