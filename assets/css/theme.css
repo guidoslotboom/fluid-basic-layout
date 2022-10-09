@@ -143,6 +143,16 @@ cite {
 
 /*****
  ***
+ ***   Theme: Code
+ ***
+*****/
+
+code {
+    color: var(--color-scheme-text-base);
+}
+
+/*****
+ ***
  ***   Theme: Link
  ***
 *****/
@@ -208,18 +218,22 @@ a:focus {
  ***
 *****/
 
-.button {
+[class*="button-filled"],
+[class*="button-outline"] {
     border-width: 0.2rem;
     border-color: transparent;
+    border-style: solid;
     background-color: transparent;
 }
 
-.button:link {
+[class*="button-filled"]:link,
+[class*="button-outline"]:link {
     color: var(--color-neutral-60);
     text-decoration: none;
 }
 
-.button:hover {
+[class*="button-filled"]:hover,
+[class*="button-outline"]:hover {
     color: var(--color-scheme-text-base);
     text-decoration: underline;
 }
@@ -356,13 +370,13 @@ figure a:focus {
  ***
 *****/
 
-code {
-    color: var(--color-scheme-text-base);
+.theme-example-list li {
+    padding-block: var(--fixed-space-md);
+    border-bottom: 1px solid var(--color-neutral-20);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
-
-
-
-/*** ***/
 
 .colors {
     display: flex;

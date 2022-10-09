@@ -4,19 +4,18 @@
  ***
 *****/
 
-.button {
+[class*="button"] {
     display: inline-block;
     margin-block: var(--fixed-space-md);
 }
 
-.button:not(:only-of-type):first-child {
+[class*="button"]:not(:only-of-type):first-child {
     margin-right: var(--fixed-space-lg);
 }
 
 [class*="button-filled"],
 [class*="button-outline"] {
     padding: var(--layout-space-xs) var(--layout-space-sm);
-    border-style: solid;
 }
 
 /*****
