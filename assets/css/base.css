@@ -6,7 +6,11 @@
 
 .button {
     display: inline-block;
-    margin-block: var(--fixed-space-sm);
+    margin-block: var(--fixed-space-md);
+}
+
+.button:not(:only-of-type):first-child {
+    margin-right: var(--fixed-space-lg);
 }
 
 [class*="button-filled"],
