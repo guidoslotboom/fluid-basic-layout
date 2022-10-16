@@ -37,59 +37,156 @@
 
                     <p>Work in progress..</p>
 
-                    <form>
-                        <fieldset class="form-fields">
-                            <div class="form-field">
-                                <label for="example-text-field">Label</label>
-                                <input type="text" id="example-text-field" placeholder="This is a text field">
-                            </div>
-                            <div class="form-field">
-                                <label for="example-text-field">Label</label>
-                                <input type="text" id="example-text-field" placeholder="This is a text field">
-                            </div>
-                            <div class="form-field">
-                                <label for="example-text-field">Label</label>
-                                <input type="text" id="example-text-field" placeholder="This is a text field">
-                            </div>
-                        </fieldset>
+                    <h3>Inputs based on text</h3>
 
-                        <fieldset class="form-fields">
-                            <div class="form-field">
-                                <label for="example-select-field">Select an option:</label>
-                                <select name="options" id="example-select-field">
-                                    <option value="option one">Option one</option>
-                                    <option value="option two">Option two</option>
-                                    <option value="option three">Option three</option>
-                                    <option value="option four">Option four</option>
-                                </select>
-                            </div>
-                        </fieldset>
+                    <ul class="list-style-none theme-example-list">
+                        <li><strong>Type</strong></li>
+                        <li>
+                            <span class="theme-example-class">email</span>
+                            <input type="email" placeholder="example@domain.com">
+                        </li>
+                        
+                        <li>
+                            <span class="theme-example-class">number</span>
+                            <input type="number" name="field-number" min="1" max="100" placeholder="0">
+                        </li>
+                        <li>
+                            <span class="theme-example-class">password</span>
+                            <input type="password" name="field-password" minlength="8" value="12345678" required>
+                        </li>
+                        
+                        <li>
+                            <span class="theme-example-class">search</span>
+                            <input type="search" name="field-search" placeholder="This is a search field">
+                        </li>
+                        
+                        <li>
+                            <span class="theme-example-class">tel</span>
+                            <input type="tel" name="field-tel" pattern="[0-9]{3}-[0-9]{8}" placeholder="316-87654321">
+                        </li>
+                        <li>
+                            <span class="theme-example-class">text</span>
+                            <input type="text" name="field-text" placeholder="This is a text field">
+                        </li>
+                        <li>
+                            <span class="theme-example-class">url</span>
+                            <input type="url" name="field-url" placeholder="https://example.com" pattern="https://.*" size="30">
+                        </li>
+                        <li>
+                            <span class="theme-example-class">url placeholder disabled</span>
+                            <input type="url" name="field-url" placeholder="https://example.com" pattern="https://.*" size="30" disabled="disabled">
+                        </li>
+                        <li>
+                            <span class="theme-example-class">url value disabled</span>
+                            <input type="url" name="field-url" value="https://example.com" pattern="https://.*" size="30" disabled>
+                        </li>
+                    </ul>
 
-                        <fieldset class="form-fields">
-                            <legend>Choose an option</legend>
-                            <div class="form-field">
-                                <input type="checkbox" id="option-one" name="option-one" value="Option one">
-                                <label for="option-one">Option one</label>
-                            </div>
-                            <div class="form-field">
-                                <input type="checkbox" id="option-two" name="option-two" value="Option two">
-                                <label for="option-two">Option two</label>
-                            </div>
-                            <div class="form-field">
-                                <input type="checkbox" id="option-three" name="option-three" value="Option three">
-                                <label for="option-three">Option three</label>
-                            </div>
-                        </fieldset>
+                    <h3>Inputs based on date, time or week</h3>
 
-                        <div class="form-fields">
-                            <legend>Do you agree?</legend>
-                            <div class="form-field">
-                                <input type="radio" id="option-one" name="option-one" value="Option one">
-                                <label for="option-one">I agree with the lorem ipsum dolor sit amet, consectetur adipiscing elit.</label>
-                            </div>
-                        </div>
-                    </form>
+                    <ul class="list-style-none theme-example-list">
+                        <li><strong>Type</strong></li>
+                        <li>
+                            <span class="theme-example-class">date</span>
+                            <input type="date" value="2022-10-14">
+                        </li>
+                        <li>
+                            <span class="theme-example-class">datetime-local</span>
+                            <input type="datetime-local" name="meeting-time" value="2018-06-12T19:30" min="2018-06-07T00:00" max="2018-06-14T00:00">
+                        </li>
+                        <li>
+                            <span class="theme-example-class">month</span>
+                            <input type="month" name="field-moth" min="2018-03" value="2018-05">
+                        </li>
+                        <li>
+                            <span class="theme-example-class">time</span>
+                            <input type="time" name="field-time" min="09:00" max="18:00">
+                        </li>
+                        <li>
+                            <span class="theme-example-class">week</span>
+                            <input type="week" name="field-week" min="2018-W18" max="2018-W26">
+                        </li>
+                    </ul>
 
+                    <h3>Inputs based on checked</h3>
+
+                    <ul class="list-style-none theme-example-list">
+                        <li><strong>Type</strong></li>
+                        <li>
+                            <span class="theme-example-class">checkbox</span>
+                            <input type="checkbox" name="field-checkbox" value="Field checkbox">
+                        </li>
+                        <li>
+                            <span class="theme-example-class">checkbox checked</span>
+                            <input type="checkbox" name="field-checkbox" value="Field checkbox" checked>
+                        </li>
+                        <li>
+                            <span class="theme-example-class">radio</span>
+                            <input type="radio" name="field-radio" value="Field radio">
+                        </li>
+                        <li>
+                            <span class="theme-example-class">radio checked</span>
+                            <input type="radio" name="field-radio" value="Field radio" checked>
+                        </li>
+                    </ul>
+
+                    <h3>Inputs based on specific input</h3>
+
+                    <ul class="list-style-none theme-example-list">
+                        <li><strong>Type</strong></li>
+                        <li>
+                            <span class="theme-example-class">file</span>
+                            <input type="file" name="field-file" accept="image/png, image/jpeg">
+                        </li>
+                        <li>
+                            <span class="theme-example-class">color</span>
+                            <input type="color" value="#000000">
+                        </li>
+                    </ul>
+
+                    <h3>Inputs based on click input</h3>
+
+                    <ul class="list-style-none theme-example-list">
+                        <li><strong>Type</strong></li>
+                        <li>
+                            <span class="theme-example-class">button</span>
+                            <input type="button" value="Button text">
+                        </li>
+                        <li>
+                            <span class="theme-example-class">reset</span>
+                            <input type="reset" value="Reset">
+                        </li>
+                        <li>
+                            <span class="theme-example-class">submit</span>
+                            <input type="submit" value="Submit">
+                        </li>
+                    </ul>
+
+                    <h2>Select</h2>
+
+                    <ul class="list-style-none theme-example-list">
+                        <li><strong>Type</strong></li>
+                        <li>
+                            <span class="theme-example-class">select</span>
+                            <select name="options">
+                                <option value="">Choose an option</option>
+                                <option value="option one">Option one</option>
+                                <option value="option two">Option two</option>
+                                <option value="option three">Option three</option>
+                                <option value="option four">Option four</option>
+                            </select>
+                        </li>
+                        <li>
+                            <span class="theme-example-class">select disabled</span>
+                            <select name="options" disabled>
+                                <option value="">Choose an option</option>
+                                <option value="option one">Option one</option>
+                                <option value="option two" selected>Option two</option>
+                                <option value="option three">Option three</option>
+                                <option value="option four">Option four</option>
+                            </select>
+                        </li>
+                    </ul>
                 </div>
             </div>
 

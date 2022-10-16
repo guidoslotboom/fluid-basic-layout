@@ -18,7 +18,7 @@
 
 body {
     background-color: var(--color-scheme-body);
-    color: var(--color-scheme-text-base);
+    color: var(--color-scheme-base);
 }
 
 .page__header {
@@ -59,7 +59,7 @@ header nav a:visited {
 }
 
 header nav a:hover {
-    color: var(--color-scheme-text-base);
+    color: var(--color-scheme-base);
     text-decoration: underline;
 }
 
@@ -80,7 +80,7 @@ footer a:visited {
 }
 
 footer a:hover {
-    color: var(--color-scheme-text-base);
+    color: var(--color-scheme-base);
     text-decoration: underline;
 }
 
@@ -94,7 +94,7 @@ footer a:hover {
 .bg-neutral-20,
 .bg-neutral-30,
 .bg-neutral-40 {
-    color: var(--color-scheme-text-base);
+    color: var(--color-scheme-base);
 }
 
 .bg-primary-30,
@@ -106,7 +106,7 @@ footer a:hover {
 .bg-neutral-60,
 .bg-neutral-70,
 .bg-neutral-50  {
-    color: var(--color-scheme-text-contrast);
+    color: var(--color-scheme-contrast);
 }
 
 .bg-primary-60,
@@ -148,7 +148,7 @@ cite {
 *****/
 
 code {
-    color: var(--color-scheme-text-base);
+    color: var(--color-scheme-base);
 }
 
 /*****
@@ -205,7 +205,7 @@ a:focus {
 /*** Link: Contrast ***/
 
 .link-contrast:link {
-    color: var(--color-scheme-text-base);
+    color: var(--color-scheme-base);
 }
 
 .link-contrast:hover {
@@ -234,7 +234,7 @@ a:focus {
 
 [class*="button-filled"]:hover,
 [class*="button-outline"]:hover {
-    color: var(--color-scheme-text-base);
+    color: var(--color-scheme-base);
     text-decoration: underline;
 }
 
@@ -253,7 +253,7 @@ a:focus {
 .button-filled-primary:link {
     border-color: var(--color-primary-40);
     background-color: var(--color-primary-40);
-    color: var(--color-scheme-text-contrast);
+    color: var(--color-scheme-contrast);
 }
 
 .button-outline-primary:link {
@@ -266,7 +266,7 @@ a:focus {
 .button-outline-primary:hover {
     border-color: var(--color-primary-50);
     background-color: var(--color-primary-50);
-    color: var(--color-scheme-text-contrast);
+    color: var(--color-scheme-contrast);
 }
 
 /*** Button: Accent ***/
@@ -274,7 +274,7 @@ a:focus {
 .button-filled-accent:link {
     border-color: var(--color-accent-40);
     background-color: var(--color-accent-40);
-    color: var(--color-scheme-text-contrast);
+    color: var(--color-scheme-contrast);
 }
 
 .button-outline-accent:link {
@@ -287,7 +287,7 @@ a:focus {
 .button-outline-accent:hover {
     border-color: var(--color-accent-50);
     background-color: var(--color-accent-50);
-    color: var(--color-scheme-text-contrast);
+    color: var(--color-scheme-contrast);
 }
 
 /*** Button: Neutral ***/
@@ -308,7 +308,7 @@ a:focus {
 .button-outline-neutral:hover {
     border-color: var(--color-neutral-30);
     background-color: var(--color-neutral-30);
-    color: var(--color-scheme-text-base);
+    color: var(--color-scheme-base);
 }
 
 /*** Button: Contrast ***/
@@ -371,12 +371,21 @@ figure a:focus {
 *****/
 
 .theme-example-list li {
-    padding-block: var(--fixed-space-md);
+    padding-block: var(--fixed-space-lg);
+    padding-inline: var(--fixed-space-lg);
     border-bottom: 1px solid var(--color-neutral-20);
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+
+.theme-example-list li:first-child {
+    padding-top: var(--fixed-space-md);
+}
+
+/* .theme-example-list li > *:last-child {
+    max-width: 320px;
+} */
 
 .colors {
     display: flex;
@@ -402,45 +411,133 @@ figure a:focus {
  ***
 *****/
 
-form {
-    padding: var(--layout-space-md);
-    display: flex;
-    gap: var(--content-space-sm);
-    flex-direction: column;
-    background-color: var(--color-neutral-10);
+
+
+/*** Form ***/
+
+input,
+select {
+    border-style: solid;
+    color: var(--color-scheme-base);
+    transition: all 100ms ease-out, outline 50ms ease-out;
 }
 
-label {
-    display: inline-block;
+input:not([type="checkbox"], [type="radio"]),
+select {
+    padding: var(--element-space-md) var(--element-space-lg);
 }
 
-input, select {
-    padding: var(--fixed-space-md) var(--fixed-space-lg);
-    width: 100%;
-    border: 2px solid var(--color-neutral-30);
-    border-radius: 1.6rem;
+select {
+    padding-right: calc(var(--element-space-xl) * 2);
 }
+
+input:not([type="color"], [type="checkbox"], [type="radio"]),
+select {
+    border-color: var(--color-neutral-60);
+    background-color: var(--color-scheme-body);
+}
+
+input:not([type="color"], [type="button"], [type="reset"], [type="submit"]),
+select {
+    border-width: 1px;
+    border-radius: 0.4rem;
+    box-shadow: 0px 1px 0px var(--color-neutral-50), 0px 0px 2px var(--color-neutral-20);
+}
+
+input:not([type="color"], [type="button"], [type="reset"], [type="submit"]):hover,
+select:hover {
+    border-color: var(--color-neutral-70);
+    box-shadow: 0px 3px 0px var(--color-neutral-40), 0px 3px 12px var(--color-neutral-20);
+}
+
+input:not([type="color"], [type="button"], [type="reset"], [type="submit"]):focus,
+select:focus {
+    border-color: var(--color-neutral-70);
+    box-shadow: none;
+}
+
+input:not([type="color"], [type="button"], [type="reset"], [type="submit"]):disabled,
+select:disabled {
+    border-color: var(--color-neutral-40);
+    background-color: var(--color-neutral-30);
+    box-shadow: 0px 1px 0px var(--color-neutral-40), 0px 0px 2px var(--color-neutral-20);
+    color: var(--color-neutral-60);
+}
+
+/*** Checkbox & Radio ***/
 
 input[type="checkbox"],
 input[type="radio"] {
-    height: 2.4rem;
-    width: 2.4rem;
+    height: 2.8rem;
+    width: 2.8rem;
+    position: relative;
 }
 
-.form-fields {
-    display: flex;
-    gap: var(--fixed-space-lg);
-    flex-wrap: wrap;
+input:checked:after {
+    content: " ";
+    height: 1.6rem;
+    width: 1.6rem;
+    top: 0.5rem;
+    left: 0.5rem;
+    background-color: var(--color-primary-40);
+    position: absolute;
 }
 
-.form-field {
-    display: inline-block;
+input[type="checkbox"] {
+    border-radius: 0.2rem;
 }
 
-.form-field:has(input[type="checkbox"] + label) {
-    padding: var(--fixed-space-md);
-    background-color: var(--color-neutral-20);
+input[type="radio"],
+input[type="radio"]:after {
+    border-radius: 100%;
 }
+
+input::placeholder {
+    color: var(--color-neutral-50);
+}
+
+input:focus,
+select:focus {
+    outline-color: var(--color-primary-40);
+    outline-style: solid;
+    outline-width: var(--fixed-space-xs);
+    outline-offset: var(--fixed-space-sm);
+}
+
+/*** Button, Reset & Submit ***/
+
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    border-width: 2px;
+    border-color: var(--color-primary-40);
+    background-color: var(--color-primary-40);
+    color: var(--color-scheme-contrast);
+}
+
+input[type="date"],
+input[type="datetime-local"],
+input[type="month"],
+input[type="time"],
+input[type="week"] {
+    align-items: center;
+}
+
+input[type="file"] {
+    padding-inline: var(--element-space-md);
+}
+
+input[type="color"] {
+    height: 4rem;
+    width: 3.6rem;
+    padding: 0;
+    border: 0;
+    box-shadow: none;
+    appearance: none;
+}
+
+
+/*** ***/
 
 @media (prefers-color-scheme: dark) {
 
@@ -451,6 +548,10 @@ input[type="radio"] {
     mark {
         background-color: var(--color-accent-40);
         color: var(--color-accent-70);
+    }
+
+    input {
+        color-scheme: dark;
     }
 }
 

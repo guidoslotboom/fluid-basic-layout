@@ -25,6 +25,13 @@
     --content-space-sm: calc(var(--content-space) - 0.8rem);
     --content-space-xs: calc(var(--content-space) - 1.2rem);
 
+    /*** Values for Fluid Element Spaces: padding ***/
+    --element-space-xl: clamp(1.6rem, 1.5vw, 2.4rem);
+    --element-space-lg: clamp(1.2rem, 1.5vw, 1.6rem);
+    --element-space-md: clamp(0.8rem, 1.5vw, 1.2rem);
+    --element-space-sm: clamp(0.4rem, 1.5vw, 0.8rem);
+    --element-space-xs: clamp(0.2rem, 1.5vw, 0.4rem);
+
     /*** Values for Fixed Spaces: margin & padding ***/
     --fixed-space-xl: 3.2rem;
     --fixed-space-lg: 1.6rem;
@@ -70,7 +77,17 @@
 
 body {
     --white: hsla(0, 0%, 100%, 100%);
+    --white-80: hsla(0, 0%, 100%, 80%);
+    --white-60: hsla(0, 0%, 100%, 60%);
+    --white-40: hsla(0, 0%, 100%, 40%);
+    --white-20: hsla(0, 0%, 100%, 20%);
+    --white-0: hsla(0, 0%, 100%, 0%);
     --black: hsla(0, 0%, 0%, 100%);
+    --black-80: hsla(0, 0%, 0%, 80%);
+    --black-60: hsla(0, 0%, 0%, 60%);
+    --black-40: hsla(0, 0%, 0%, 40%);
+    --black-20: hsla(0, 0%, 0%, 20%);
+    --black-0: hsla(0, 0%, 0%, 0%);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -107,18 +124,19 @@ body {
         
         /*** Color Palette: Neutral ***/
         --color-neutral: 224, 80%;
-        --color-neutral-10: hsla(var(--color-neutral), 8%, 100%);
-        --color-neutral-20: hsla(var(--color-neutral), 12%, 100%);
-        --color-neutral-30: hsla(var(--color-neutral), 28%, 100%);
+        --color-neutral-10: hsla(var(--color-neutral), 12%, 100%);
+        --color-neutral-20: hsla(var(--color-neutral), 16%, 100%);
+        --color-neutral-30: hsla(var(--color-neutral), 32%, 100%);
         --color-neutral-40: hsla(var(--color-neutral), 44%, 100%);
-        --color-neutral-50: hsla(var(--color-neutral), 72%, 100%);
+        --color-neutral-50: hsla(var(--color-neutral), 76%, 100%);
         --color-neutral-60: hsla(var(--color-neutral), 84%, 100%);
         --color-neutral-70: hsla(var(--color-neutral), 92%, 100%);
 
         /*** Color Scheme: Alternating colors for dark and light ***/
-        --color-scheme-body: hsla(var(--color-neutral), 20%, 100%);
-        --color-scheme-text-base: var(--white);
-        --color-scheme-text-contrast: var(--black);
+        --color-scheme: 0, 0%;
+        --color-scheme-base: hsl(var(--color-scheme), 100%);
+        --color-scheme-contrast: hsl(var(--color-scheme), 0%);
+        --color-scheme-body: hsl(var(--color-neutral), 24%);
     }
 }
 
@@ -156,18 +174,19 @@ body {
         
         /*** Color Palette: Neutral ***/
         --color-neutral: 216, 20%;
-        --color-neutral-10: hsla(var(--color-neutral), 95%, 100%);
+        --color-neutral-10: hsla(var(--color-neutral), 94%, 100%);
         --color-neutral-20: hsla(var(--color-neutral), 90%, 100%);
-        --color-neutral-30: hsla(var(--color-neutral), 85%, 100%);
+        --color-neutral-30: hsla(var(--color-neutral), 84%, 100%);
         --color-neutral-40: hsla(var(--color-neutral), 65%, 100%);
         --color-neutral-50: hsla(var(--color-neutral), 50%, 100%);
         --color-neutral-60: hsla(var(--color-neutral), 30%, 100%);
         --color-neutral-70: hsla(var(--color-neutral), 15%, 100%);
         
         /*** Color Scheme: Alternating colors for dark and light ***/
-        --color-scheme-body: hsla(var(--color-neutral), 98%, 100%);
-        --color-scheme-text-base: var(--black);
-        --color-scheme-text-contrast: var(--white);
+        --color-scheme: 0, 0%;
+        --color-scheme-base: hsl(var(--color-scheme), 0%);
+        --color-scheme-contrast: hsl(var(--color-scheme), 100%);
+        --color-scheme-body: hsl(var(--color-neutral), 98%);
     }
 }
 

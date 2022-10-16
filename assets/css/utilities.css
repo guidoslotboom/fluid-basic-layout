@@ -743,11 +743,11 @@ ol.list-style-none {
 }
 
 .text-base {
-    color: var(--color-scheme-text-base);
+    color: var(--color-scheme-base);
 }
 
 .text-contrast {
-    color: var(--color-scheme-text-contrast);
+    color: var(--color-scheme-contrast);
 }
 
 /*****

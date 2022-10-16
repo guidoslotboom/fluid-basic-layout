@@ -1,6 +1,6 @@
 /*****
  ***
- ***   Theme: Button
+ ***   Base: Button
  ***
 *****/
 
@@ -15,7 +15,7 @@
 
 [class*="button-filled"],
 [class*="button-outline"] {
-    padding: var(--layout-space-xs) var(--layout-space-sm);
+    padding: var(--element-space-md) var(--element-space-lg);
 }
 
 /*****
