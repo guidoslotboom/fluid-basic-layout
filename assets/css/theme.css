@@ -427,10 +427,6 @@ select {
     padding: var(--element-space-md) var(--element-space-lg);
 }
 
-select {
-    padding-right: calc(var(--element-space-xl) * 2);
-}
-
 input:not([type="color"], [type="checkbox"], [type="radio"]),
 select {
     border-color: var(--color-neutral-60);
